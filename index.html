@@ -33,9 +33,13 @@
     .project-card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; }
     .project-card img { width: 100%; height: 190px; object-fit: cover; background: #eee; }
     .project-card div { padding: 18px; }
+    .current-research-card { display: grid; grid-template-columns: 320px 1fr; gap: 24px; align-items: center; border: 1px solid #ddd; border-radius: 12px; padding: 18px; margin-bottom: 24px; background: #fff; }
+    .current-research-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; background: #eee; }
+    .current-research-info h3 { margin-top: 0; margin-bottom: 8px; font-size: 21px; line-height: 1.35; }
+    .current-research-info p { margin: 8px 0; }
     footer { background: #111; color: #ddd; text-align: center; padding: 28px 20px; margin-top: 30px; }
     footer a { color: #fff; }
-    @media (max-width: 720px) { .publication-card { grid-template-columns: 1fr; } nav a { display: inline-block; margin: 6px 10px; } }
+    @media (max-width: 720px) { .publication-card, .current-research-card { grid-template-columns: 1fr; } nav a { display: inline-block; margin: 6px 10px; } }
   </style>
 </head>
 
@@ -50,6 +54,7 @@
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
+    <a href="#current-research">Current Research</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -118,7 +123,7 @@
         <h3>Onion-LO++: An Adaptive and Degradation-Resistant Continuous-Time LiDAR Odometry</h3>
         <p><strong>Conference:</strong> IEEE International Conference on Robotics and Automation, 2026.</p>
         <p><strong>Contribution:</strong> A continuous-time LiDAR odometry framework for robust localization under aggressive motion and highly degenerate point-cloud scenarios.</p>
-        <div class="pub-links"><a href="https://github.com/huashu996/Onion-LO++" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a></div>
+        <div class="pub-links"><a href="https://github.com/huashu996/Onion-LO++" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a><a href="https://youtu.be/KeuztpNi5Vs" target="_blank">Video</a></div>
       </div>
     </div>
 
@@ -138,7 +143,7 @@
         <h3>LIVOX-CAM: Adaptive Coarse-to-Fine Visual-Assisted LiDAR Odometry for Solid-State LiDAR</h3>
         <p><strong>Journal:</strong> IEEE Robotics and Automation Letters, 2025.</p>
         <p><strong>Contribution:</strong> A visual-assisted LiDAR odometry method for solid-state LiDAR, improving registration stability through adaptive coarse-to-fine optimization.</p>
-        <div class="pub-links"><a href="https://github.com/huashu996/LIVOX-CAM" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a></div>
+        <div class="pub-links"><a href="https://github.com/huashu996/LIVOX-CAM" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a><a href="#" target="_blank">Video</a></div>
       </div>
     </div>
 
@@ -178,7 +183,7 @@
 
     <div class="project-grid">
       <div class="project-card">
-        <img src="assets/projects/air-ground-collaborative-slam.jpg" alt="Air-Ground Collaborative SLAM" />
+        <img src="assets/projects/air-ground-collaborative-slam.png" alt="Air-Ground Collaborative SLAM" />
         <div>
           <h3>Air–Ground Collaborative SLAM</h3>
           <p>Developed a UAV–UGV collaborative robotic system for cooperative localization and true-color 3D reconstruction, integrating multi-sensor platform calibration, wireless inter-robot communication, and real-time collaborative SLAM for mapping, localization, and autonomous obstacle avoidance.</p>
@@ -186,7 +191,7 @@
       </div>
 
       <div class="project-card">
-        <img src="assets/projects/road-inspection.jpg" alt="LiDAR-Vision Fusion-Based Intelligent Road Inspection System" />
+        <img src="assets/projects/road-inspection.png" alt="LiDAR-Vision Fusion-Based Intelligent Road Inspection System" />
         <div>
           <h3>LiDAR–Vision Fusion-Based Intelligent Road Inspection System</h3>
           <p>Developed a public-bus multi-sensor mapping system for urban elevated roads, integrating GPS, LiDAR, and vision sensors to support road surface reconstruction, road distress localization, dynamic object removal, and quantitative distress area estimation through LiDAR–camera SLAM and visual detection fusion.</p>
@@ -194,7 +199,7 @@
       </div>
 
       <div class="project-card">
-        <img src="assets/projects/avp-slam.jpg" alt="AVP-SLAM Localization System Development" />
+        <img src="assets/projects/avp-slam.png" alt="AVP-SLAM Localization System Development" />
         <div>
           <h3>AVP-SLAM Localization System Development</h3>
           <p>Led the development of a LiDAR-based autonomous valet parking system using a pre-built global map of a multi-level underground parking garage, including high-resolution 3D point cloud mapping, pure LiDAR relocalization, and adaptive LiDAR odometry for different parking environments.</p>
@@ -202,7 +207,7 @@
       </div>
 
       <div class="project-card">
-        <img src="assets/projects/mining-area-volume-estimation.jpg" alt="Mining Area Volume Estimation Based on UAV LiDAR SLAM" />
+        <img src="assets/projects/mining-area-volume-estimation.png" alt="Mining Area Volume Estimation Based on UAV LiDAR SLAM" />
         <div>
           <h3>Mining Area Volume Estimation Based on UAV LiDAR SLAM</h3>
           <p>Led the development of a UAV-based LiDAR–camera data acquisition and mapping system for mining-area reconstruction and stockpile volume estimation, involving LiDAR–camera–IMU fusion mapping, point cloud densification, region-of-interest cropping, and volumetric analysis.</p>
@@ -210,11 +215,51 @@
       </div>
 
       <div class="project-card">
-        <img src="assets/projects/low-visibility-perception.jpg" alt="Intelligent Vehicle Perception in Low-Visibility Conditions" />
+        <img src="assets/projects/low-visibility-perception.png" alt="Intelligent Vehicle Perception in Low-Visibility Conditions" />
         <div>
           <h3>Intelligent Vehicle Perception in Low-Visibility Conditions</h3>
           <p>Led the development of a visible–infrared bimodal perception system for long-range traffic target detection, covering vehicles and pedestrians within 300 m. The project involved building the bimodal sensing platform, collecting and annotating a visible–infrared traffic object detection dataset, and designing the Dual-YOLO bimodal detection network.</p>
         </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/projects/cave-mapping.png" alt="Handheld Device-Based Cave Mapping for UAV Navigation" />
+        <div>
+          <h3>Handheld Device-Based Cave Mapping for UAV Navigation</h3>
+          <p>Developed a portable cave-mapping workflow using handheld sensing devices to construct accurate 3D cave maps, providing prior environmental information and navigation support for UAV operation in GPS-denied and structurally complex underground environments.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/projects/resort-scenic-area-mapping.png" alt="Large-Scale Resort Scenic Area Mapping for Autonomous Sightseeing Vehicles" />
+        <div>
+          <h3>Large-Scale Resort Scenic Area Mapping for Autonomous Sightseeing Vehicles</h3>
+          <p>Built large-scale 3D maps of resort and scenic-area environments to support localization, navigation, and deployment of autonomous sightseeing vehicles, with emphasis on robust mapping across open roads, pedestrian areas, and visually complex outdoor scenes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="current-research">
+    <h2>Current Research</h2>
+
+    <div class="current-research-card">
+      <img src="assets/current-research/true-color-3d-mapping.gif" alt="Real-World True-Color 3D Mapping" />
+      <div class="current-research-info">
+        <h3>Real-World True-Color 3D Mapping</h3>
+        <p>
+          I am currently working on real-world true-color 3D mapping systems that integrate geometric reconstruction and visual appearance modeling. The goal is to build high-fidelity, scalable, and field-deployable 3D maps for robotic navigation, scene understanding, and digital-twin applications.
+        </p>
+      </div>
+    </div>
+
+    <div class="current-research-card">
+      <img src="assets/current-research/air-ground-coordinated-mapping.gif" alt="Air-Ground Coordinated Mapping" />
+      <div class="current-research-info">
+        <h3>Air–Ground Coordinated Mapping</h3>
+        <p>
+          I am developing air–ground coordinated mapping methods for heterogeneous UAV–UGV systems, focusing on cooperative localization, cross-platform map alignment, multi-view reconstruction, and robust operation in large-scale, GPS-denied, and geometrically challenging environments.
+        </p>
       </div>
     </div>
   </section>
