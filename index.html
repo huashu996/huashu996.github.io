@@ -6,172 +6,42 @@
   <title>Xiaolong Cheng | SLAM, 3D Reconstruction, and Multi-Robot Systems</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      background: #ffffff;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-      font-weight: 700;
-    }
-
-    header p {
-      margin: 12px 0 0;
-      font-size: 20px;
-      color: #ddd;
-    }
-
-    nav {
-      background: #f5f5f5;
-      padding: 14px 20px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      margin: 0 14px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: #0066cc;
-    }
-
-    section {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 55px 24px;
-    }
-
-    h2 {
-      font-size: 30px;
-      border-bottom: 2px solid #111;
-      padding-bottom: 8px;
-      margin-bottom: 24px;
-    }
-
-    h3 {
-      margin-bottom: 6px;
-      font-size: 21px;
-    }
-
-    .intro {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .intro img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #ddd;
-    }
-
-    .intro-text {
-      flex: 1;
-      min-width: 260px;
-    }
-
-    .links a {
-      display: inline-block;
-      margin-right: 14px;
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 22px;
-      margin-bottom: 22px;
-      background: #fafafa;
-    }
-
-    .card p {
-      margin-top: 8px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eaeaea;
-      color: #333;
-      padding: 4px 9px;
-      border-radius: 12px;
-      font-size: 13px;
-      margin: 4px 4px 4px 0;
-    }
-
-    .publication {
-      margin-bottom: 22px;
-    }
-
-    .publication strong {
-      color: #000;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
-    }
-
-    .project-card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #fff;
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 170px;
-      object-fit: cover;
-      background: #eee;
-    }
-
-    .project-card div {
-      padding: 18px;
-    }
-
-    footer {
-      background: #111;
-      color: #ddd;
-      text-align: center;
-      padding: 28px 20px;
-      margin-top: 30px;
-    }
-
-    footer a {
-      color: #fff;
-    }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; background: #ffffff; line-height: 1.6; }
+    header { background: #111; color: white; padding: 60px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 42px; font-weight: 700; }
+    header p { margin: 12px 0 0; font-size: 20px; color: #ddd; }
+    nav { background: #f5f5f5; padding: 14px 20px; text-align: center; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 10; }
+    nav a { margin: 0 14px; text-decoration: none; color: #111; font-weight: 600; }
+    nav a:hover { color: #0066cc; }
+    section { max-width: 1050px; margin: 0 auto; padding: 55px 24px; }
+    h2 { font-size: 30px; border-bottom: 2px solid #111; padding-bottom: 8px; margin-bottom: 24px; }
+    h3 { margin-bottom: 6px; font-size: 21px; }
+    .intro { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
+    .intro img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 3px solid #ddd; }
+    .intro-text { flex: 1; min-width: 260px; }
+    .links a { display: inline-block; margin-right: 14px; color: #0066cc; text-decoration: none; font-weight: 600; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin-bottom: 22px; background: #fafafa; }
+    .card p { margin-top: 8px; }
+    .tag { display: inline-block; background: #eaeaea; color: #333; padding: 4px 9px; border-radius: 12px; font-size: 13px; margin: 4px 4px 4px 0; }
+    .publication-card { display: grid; grid-template-columns: 260px 1fr; gap: 24px; align-items: center; border: 1px solid #ddd; border-radius: 12px; padding: 18px; margin-bottom: 24px; background: #fff; }
+    .publication-card img { width: 100%; height: 170px; object-fit: cover; border-radius: 8px; background: #eee; }
+    .publication-info h3 { margin-top: 0; margin-bottom: 8px; font-size: 21px; line-height: 1.35; }
+    .publication-info p { margin: 8px 0; }
+    .pub-links a { display: inline-block; margin-right: 10px; margin-top: 8px; padding: 6px 12px; border: 1px solid #111; border-radius: 20px; color: #111; font-size: 14px; font-weight: 600; text-decoration: none; }
+    .pub-links a:hover { background: #111; color: #fff; text-decoration: none; }
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 22px; }
+    .project-card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: #fff; }
+    .project-card img { width: 100%; height: 190px; object-fit: cover; background: #eee; }
+    .project-card div { padding: 18px; }
+    footer { background: #111; color: #ddd; text-align: center; padding: 28px 20px; margin-top: 30px; }
+    footer a { color: #fff; }
+    @media (max-width: 720px) { .publication-card { grid-template-columns: 1fr; } nav a { display: inline-block; margin: 6px 10px; } }
   </style>
 </head>
 
 <body>
-
   <header>
-    <h1>HUASHU</h1>
+    <h1>Xiaolong Cheng</h1>
     <p>Ph.D. Candidate | Robotics, LiDAR SLAM, Multi-Sensor Fusion, and Air–Ground Collaborative Mapping</p>
   </header>
 
@@ -180,16 +50,13 @@
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
-    <a href="#software">Software</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About</h2>
-
     <div class="intro">
       <img src="assets/profile.jpg" alt="Profile Photo" />
-
       <div class="intro-text">
         <p>
           I am a Ph.D. candidate at Southeast University. My research focuses on
@@ -198,18 +65,16 @@
           in robust localization and mapping in large-scale, geometrically degenerate,
           and GPS-denied environments.
         </p>
-
         <p>
           My recent work explores adaptive LiDAR odometry, degeneration-resistant
           registration, visual–LiDAR fusion, continuous-time trajectory estimation,
           and collaborative mapping for UAV–UGV systems.
         </p>
-
         <div class="links">
           <a href="https://github.com/huashu996" target="_blank">GitHub</a>
-          <a href="files/CV.pdf" target="_blank">CV</a>
-          <a href="#" target="_blank">Google Scholar</a>
-          <a href="mailto:your_email@seu.edu.cn">Email</a>
+          <a href="files/Xiaolong_Cheng_CV.pdf" target="_blank">CV</a>
+          <a href="https://scholar.google.com/citations?user=XJ_P3DAAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+          <a href="mailto:230238059@seu.edu.cn">Email</a>
         </div>
       </div>
     </div>
@@ -220,10 +85,7 @@
 
     <div class="card">
       <h3>Robust LiDAR Odometry and SLAM</h3>
-      <p>
-        Developing adaptive and degeneration-resistant LiDAR odometry algorithms
-        for large-scale, sparse, and structurally weak environments.
-      </p>
+      <p>Developing adaptive and degeneration-resistant LiDAR odometry algorithms for large-scale, sparse, and structurally weak environments.</p>
       <span class="tag">LiDAR Odometry</span>
       <span class="tag">SLAM</span>
       <span class="tag">Degeneracy</span>
@@ -232,63 +94,82 @@
 
     <div class="card">
       <h3>Air–Ground Collaborative 3D Reconstruction</h3>
-      <p>
-        Building UAV–UGV collaborative systems for large-scale scene reconstruction,
-        autonomous landing, map stitching, and cooperative mapping.
-      </p>
+      <p>Building UAV–UGV collaborative systems for large-scale scene reconstruction, autonomous landing, map stitching, and cooperative mapping.</p>
       <span class="tag">UAV–UGV Systems</span>
       <span class="tag">Collaborative Mapping</span>
       <span class="tag">3D Reconstruction</span>
     </div>
 
     <div class="card">
-      <h3>Multi-Sensor Fusion for Robotic Perception</h3>
-      <p>
-        Investigating visual–LiDAR, visible–infrared, and semantic fusion methods
-        for robust perception under challenging illumination, structure, and motion conditions.
-      </p>
-      <span class="tag">Visual–LiDAR Fusion</span>
-      <span class="tag">Infrared–Visible Fusion</span>
-      <span class="tag">Robotic Perception</span>
+      <h3>Multi-Robot Exploration</h3>
+      <p>Developing cooperative exploration, distributed perception, and collaborative mapping strategies for heterogeneous robotic systems operating in large-scale and GPS-denied environments.</p>
+      <span class="tag">Multi-Robot Systems</span>
+      <span class="tag">Cooperative Exploration</span>
+      <span class="tag">Collaborative Mapping</span>
     </div>
   </section>
 
   <section id="publications">
     <h2>Selected Publications</h2>
 
-    <div class="publication">
-      <p>
-        <strong>Onion-LO++: An Adaptive and Degradation-Resistant Continuous-Time LiDAR Odometry.</strong><br />
-        IEEE International Conference on Robotics and Automation, 2026.
-      </p>
+    <div class="publication-card">
+      <img src="assets/publications/onion-lo-plusplus.gif" alt="Onion-LO++ demo GIF" />
+      <div class="publication-info">
+        <h3>Onion-LO++: An Adaptive and Degradation-Resistant Continuous-Time LiDAR Odometry</h3>
+        <p><strong>Conference:</strong> IEEE International Conference on Robotics and Automation, 2026.</p>
+        <p><strong>Contribution:</strong> A continuous-time LiDAR odometry framework for robust localization under aggressive motion and highly degenerate point-cloud scenarios.</p>
+        <div class="pub-links"><a href="https://github.com/huashu996/Onion-LO++" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a></div>
+      </div>
     </div>
 
-    <div class="publication">
-      <p>
-        <strong>Onion-LO: Why Does LiDAR Odometry Fail Across Different LiDAR Types and Scenarios?</strong><br />
-        IEEE Robotics and Automation Letters, 2025.
-      </p>
+    <div class="publication-card">
+      <img src="assets/publications/onion-lo.gif" alt="Onion-LO demo GIF" />
+      <div class="publication-info">
+        <h3>Onion-LO: Why Does LiDAR Odometry Fail Across Different LiDAR Types and Scenarios?</h3>
+        <p><strong>Journal:</strong> IEEE Robotics and Automation Letters, 2025.</p>
+        <p><strong>Contribution:</strong> An adaptive LiDAR odometry framework for improving robustness across different LiDAR types, motion patterns, and scene structures.</p>
+        <div class="pub-links"><a href="https://github.com/huashu996/Onion-LO" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a></div>
+      </div>
     </div>
 
-    <div class="publication">
-      <p>
-        <strong>LIVOX-CAM: Adaptive Coarse-to-Fine Visual-Assisted LiDAR Odometry for Solid-State LiDAR.</strong><br />
-        IEEE Robotics and Automation Letters, 2025.
-      </p>
+    <div class="publication-card">
+      <img src="assets/publications/livox-cam.gif" alt="LIVOX-CAM demo GIF" />
+      <div class="publication-info">
+        <h3>LIVOX-CAM: Adaptive Coarse-to-Fine Visual-Assisted LiDAR Odometry for Solid-State LiDAR</h3>
+        <p><strong>Journal:</strong> IEEE Robotics and Automation Letters, 2025.</p>
+        <p><strong>Contribution:</strong> A visual-assisted LiDAR odometry method for solid-state LiDAR, improving registration stability through adaptive coarse-to-fine optimization.</p>
+        <div class="pub-links"><a href="https://github.com/huashu996/LIVOX-CAM" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a></div>
+      </div>
     </div>
 
-    <div class="publication">
-      <p>
-        <strong>SVM-LO: An Accurate, Robust, Real-Time LiDAR Odometry with Segmentation Voxel Map for Autonomous Vehicles.</strong><br />
-        IEEE International Conference on Intelligent Transportation Systems, 2024.
-      </p>
+    <div class="publication-card">
+      <img src="assets/publications/ndt-cam.gif" alt="NDT-CAM demo GIF" />
+      <div class="publication-info">
+        <h3>NDT-CAM: A Simple, Adaptive, and Robust Visual-Assisted LiDAR Odometry for High-Altitude Mapping</h3>
+        <p><strong>Status:</strong> Robotics and Autonomous Systems, major revision.</p>
+        <p><strong>Contribution:</strong> A visual-assisted NDT-based LiDAR odometry system designed for high-altitude UAV mapping in sparse and geometrically degenerate environments.</p>
+        <div class="pub-links"><a href="https://github.com/huashu996/NDT-CAM" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a></div>
+      </div>
     </div>
 
-    <div class="publication">
-      <p>
-        <strong>SLBAF-Net: Super-Lightweight Bimodal Adaptive Fusion Network for UAV Detection in Low-Recognition Environments.</strong><br />
-        Multimedia Tools and Applications, 2023.
-      </p>
+    <div class="publication-card">
+      <img src="assets/publications/svm-lo.gif" alt="SVM-LO demo GIF" />
+      <div class="publication-info">
+        <h3>SVM-LO: An Accurate, Robust, Real-Time LiDAR Odometry with Segmentation Voxel Map for Autonomous Vehicles</h3>
+        <p><strong>Conference:</strong> IEEE International Conference on Intelligent Transportation Systems, 2024.</p>
+        <p><strong>Contribution:</strong> A segmentation voxel map-based LiDAR odometry system for robust and real-time autonomous vehicle localization.</p>
+        <div class="pub-links"><a href="#" target="_blank">Paper</a></div>
+      </div>
+    </div>
+
+    <div class="publication-card">
+      <img src="assets/publications/slbaf-net.gif" alt="SLBAF-Net demo GIF" />
+      <div class="publication-info">
+        <h3>SLBAF-Net: Super-Lightweight Bimodal Adaptive Fusion Network for UAV Detection in Low-Recognition Environments</h3>
+        <p><strong>Journal:</strong> Multimedia Tools and Applications, 2023.</p>
+        <p><strong>Contribution:</strong> A lightweight visible–infrared bimodal fusion network for UAV detection in low-recognition and challenging visual environments.</p>
+        <div class="pub-links"><a href="https://github.com/huashu996/SLBAF-Net" target="_blank">GitHub</a><a href="#" target="_blank">Paper</a></div>
+      </div>
     </div>
   </section>
 
@@ -296,94 +177,61 @@
     <h2>Research Projects</h2>
 
     <div class="project-grid">
-
       <div class="project-card">
-        <img src="assets/air-ground-system.png" alt="Air-Ground Collaborative System" />
+        <img src="assets/projects/air-ground-collaborative-slam.jpg" alt="Air-Ground Collaborative SLAM" />
         <div>
-          <h3>Air–Ground Collaborative 3D Reconstruction System</h3>
-          <p>
-            A UAV–UGV collaborative platform for large-scale scene reconstruction,
-            autonomous takeoff and landing, map stitching, and cooperative 3D mapping.
-          </p>
+          <h3>Air–Ground Collaborative SLAM</h3>
+          <p>Developed a UAV–UGV collaborative robotic system for cooperative localization and true-color 3D reconstruction, integrating multi-sensor platform calibration, wireless inter-robot communication, and real-time collaborative SLAM for mapping, localization, and autonomous obstacle avoidance.</p>
         </div>
       </div>
 
       <div class="project-card">
-        <img src="assets/ndt-cam.png" alt="NDT-CAM" />
+        <img src="assets/projects/road-inspection.jpg" alt="LiDAR-Vision Fusion-Based Intelligent Road Inspection System" />
         <div>
-          <h3>NDT-CAM</h3>
-          <p>
-            A visual-assisted LiDAR odometry system designed for high-altitude UAV mapping
-            in sparse and geometrically degenerate environments.
-          </p>
+          <h3>LiDAR–Vision Fusion-Based Intelligent Road Inspection System</h3>
+          <p>Developed a public-bus multi-sensor mapping system for urban elevated roads, integrating GPS, LiDAR, and vision sensors to support road surface reconstruction, road distress localization, dynamic object removal, and quantitative distress area estimation through LiDAR–camera SLAM and visual detection fusion.</p>
         </div>
       </div>
 
       <div class="project-card">
-        <img src="assets/onion-lo.png" alt="Onion-LO" />
+        <img src="assets/projects/avp-slam.jpg" alt="AVP-SLAM Localization System Development" />
         <div>
-          <h3>Onion-LO / Onion-LO++</h3>
-          <p>
-            Adaptive LiDAR odometry frameworks for robust localization across different
-            LiDAR types, motion patterns, and degenerate scenes.
-          </p>
+          <h3>AVP-SLAM Localization System Development</h3>
+          <p>Led the development of a LiDAR-based autonomous valet parking system using a pre-built global map of a multi-level underground parking garage, including high-resolution 3D point cloud mapping, pure LiDAR relocalization, and adaptive LiDAR odometry for different parking environments.</p>
         </div>
       </div>
 
+      <div class="project-card">
+        <img src="assets/projects/mining-area-volume-estimation.jpg" alt="Mining Area Volume Estimation Based on UAV LiDAR SLAM" />
+        <div>
+          <h3>Mining Area Volume Estimation Based on UAV LiDAR SLAM</h3>
+          <p>Led the development of a UAV-based LiDAR–camera data acquisition and mapping system for mining-area reconstruction and stockpile volume estimation, involving LiDAR–camera–IMU fusion mapping, point cloud densification, region-of-interest cropping, and volumetric analysis.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/projects/low-visibility-perception.jpg" alt="Intelligent Vehicle Perception in Low-Visibility Conditions" />
+        <div>
+          <h3>Intelligent Vehicle Perception in Low-Visibility Conditions</h3>
+          <p>Led the development of a visible–infrared bimodal perception system for long-range traffic target detection, covering vehicles and pedestrians within 300 m. The project involved building the bimodal sensing platform, collecting and annotating a visible–infrared traffic object detection dataset, and designing the Dual-YOLO bimodal detection network.</p>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <section id="software">
-    <h2>Open-Source Software</h2>
-
-    <div class="card">
-      <h3>SLBAF-Net</h3>
-      <p>
-        Visible–infrared bimodal fusion network for UAV detection in challenging visual environments.
-      </p>
-      <a href="https://github.com/huashu996/SLBAF-Net" target="_blank">GitHub Repository</a>
-    </div>
-
-    <div class="card">
-      <h3>Onion-LO</h3>
-      <p>
-        A LiDAR odometry framework for analyzing and improving robustness across LiDAR types and scenarios.
-      </p>
-      <a href="https://github.com/huashu996/Onion-LO" target="_blank">GitHub Repository</a>
-    </div>
-
-    <div class="card">
-      <h3>LIVOX-CAM</h3>
-      <p>
-        Visual-assisted LiDAR odometry for solid-state LiDAR with adaptive coarse-to-fine registration.
-      </p>
-      <a href="https://github.com/huashu996/LIVOX-CAM" target="_blank">GitHub Repository</a>
-    </div>
-
-    <div class="card">
-      <h3>ORB_SLAM3_Dense_YOLO</h3>
-      <p>
-        A dense mapping system integrating ORB-SLAM3, YOLO, and RGB-D perception.
-      </p>
-      <a href="https://github.com/huashu996/ORB_SLAM3_Dense_YOLO" target="_blank">GitHub Repository</a>
-    </div>
-
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-
     <p>
       <strong>Affiliation:</strong> Southeast University<br />
       <strong>Location:</strong> Nanjing, China<br />
-      <strong>Email:</strong> your_email@seu.edu.cn<br />
-      <strong>GitHub:</strong> <a href="https://github.com/huashu996" target="_blank">https://github.com/huashu996</a>
+      <strong>Email:</strong> <a href="mailto:230238059@seu.edu.cn">230238059@seu.edu.cn</a><br />
+      <strong>GitHub:</strong> <a href="https://github.com/huashu996" target="_blank">https://github.com/huashu996</a><br />
+      <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=XJ_P3DAAAAAJ&hl=zh-CN" target="_blank">Xiaolong Cheng</a>
     </p>
   </section>
 
   <footer>
-    <p>© 2026 HUASHU. Powered by GitHub Pages.</p>
+    <p>© 2026 Xiaolong Cheng. Powered by GitHub Pages.</p>
   </footer>
-
 </body>
 </html>
