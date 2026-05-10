@@ -23,7 +23,18 @@
     .card { border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin-bottom: 14px; background: #fafafa; }
     .card p { margin: 6px 0 0; }
     .project-card p, .education-item p, .current-research-info p, .publication-info p { line-height: 1.55; }
-    .project-card p { text-align: justify; text-justify: inter-word; }
+    .intro-text p,
+    .card p,
+    .publication-info p,
+    .project-card p,
+    .current-research-info p,
+    .education-item p,
+    .skill-row p,
+    .skill-note,
+    #contact p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
     .tag { display: inline-block; background: #eaeaea; color: #333; padding: 4px 9px; border-radius: 12px; font-size: 13px; margin: 4px 4px 4px 0; }
     .publication-card { display: grid; grid-template-columns: 240px 1fr; gap: 18px; align-items: center; border: 1px solid #ddd; border-radius: 12px; padding: 14px; margin-bottom: 16px; background: #fff; }
     .publication-card img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; background: #eee; }
@@ -106,16 +117,11 @@
       <img src="assets/profile.jpg" alt="Profile Photo" />
       <div class="intro-text">
         <p>
-          I am a Ph.D. candidate at Southeast University. My research focuses on
-          robotic perception, LiDAR odometry, SLAM, multi-sensor fusion, and
-          air–ground collaborative 3D reconstruction. I am particularly interested
-          in robust localization and mapping in large-scale, geometrically degenerate,
-          and GPS-denied environments.
-        </p>
-        <p>
-          My recent work explores adaptive LiDAR odometry, degeneration-resistant
-          registration, visual–LiDAR fusion, continuous-time trajectory estimation,
-          and collaborative mapping for UAV–UGV systems.
+          Ph.D. candidate in Mechanical Engineering at Southeast University, specializing in multi-sensor fusion SLAM, 3D
+          reconstruction, and air–ground collaborative robotic systems. My research focuses on robust localization and
+          mapping in challenging environments, with expertise in sensor fusion, cross-platform adaptation, real-time robotic
+          perception, and deep-learning-based multimodal perception for robotic systems. I am seeking a postdoctoral
+          position in SLAM, 3D Gaussian Splatting Reconstruction, and collaborative robotics.
         </p>
         <div class="links">
           <a href="https://github.com/huashu996" target="_blank">GitHub</a>
@@ -131,7 +137,7 @@
     <h2>Research Interests</h2>
 
     <div class="card">
-      <h3>Multi-Sensor Fusion SLAM and Robust Localization</h3>
+      <h3>Multi-Sensor Fusion SLAM and Robust Localization in Challenging Environments</h3>
       <p>Developing robust multi-sensor fusion SLAM and localization methods for large-scale, GPS-denied, and structurally challenging environments.</p>
       <span class="tag">Multi-Sensor Fusion</span>
       <span class="tag">SLAM</span>
@@ -139,11 +145,11 @@
     </div>
 
     <div class="card">
-      <h3>UAV Navigation and 3D Reconstruction</h3>
-      <p>Investigating autonomous UAV navigation and high-fidelity 3D reconstruction for complex real-world environments.</p>
+      <h3>UAV Navigation and 3D Gaussian Splatting-Based Reconstruction</h3>
+      <p>Investigating autonomous UAV navigation and high-fidelity 3D reconstruction using Gaussian splatting for complex real-world environments.</p>
       <span class="tag">UAV Navigation</span>
+      <span class="tag">3D Gaussian Splatting</span>
       <span class="tag">3D Reconstruction</span>
-      <span class="tag">Robotic Perception</span>
     </div>
 
     <div class="card">
@@ -155,11 +161,11 @@
     </div>
 
     <div class="card">
-      <h3>Air–Ground Collaborative SLAM and Heterogeneous Robotic Systems</h3>
-      <p>Building UAV–UGV collaborative systems for cross-platform localization, map fusion, and coordinated operation in challenging environments.</p>
-      <span class="tag">Air–Ground Collaboration</span>
-      <span class="tag">Heterogeneous Robots</span>
-      <span class="tag">Cooperative SLAM</span>
+      <h3>Semantic Understanding of Complex Environments</h3>
+      <p>Exploring deep-learning-based multimodal perception and semantic scene understanding for robotic systems operating in complex environments.</p>
+      <span class="tag">Semantic Understanding</span>
+      <span class="tag">Multimodal Perception</span>
+      <span class="tag">Vision Perception</span>
     </div>
   </section>
 
@@ -245,7 +251,7 @@
   </section>
 
   <section id="projects">
-    <h2>Research Projects  -----  SLAM | Sensor fusion | Object Detection</h2>
+    <h2>Research Projects  -----  SLAM | Sensor fusion | Vision perception</h2>
 
     <div class="project-grid">
       <div class="project-card">
@@ -285,6 +291,14 @@
         <div>
           <h3>Intelligent Vehicle Perception in Low-Visibility Conditions</h3>
           <p>Led the development of a visible–infrared bimodal perception system for long-range traffic target detection, covering vehicles and pedestrians within 300 m. The project involved building the bimodal sensing platform, collecting and annotating a visible–infrared traffic object detection dataset, and designing the Dual-YOLO bimodal detection network.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/projects/road-litter-segmentation.png" alt="Road Litter Segmentation for Autonomous Sanitation Vehicles" />
+        <div>
+          <h3>Road Litter Segmentation for Autonomous Sanitation Vehicles</h3>
+          <p>Developed a YOLACT-based road litter detection and segmentation algorithm using visible-light cameras with different focal lengths to detect and classify road debris, enabling autonomous sanitation vehicles to recognize and clean litter automatically.</p>
         </div>
       </div>
 
